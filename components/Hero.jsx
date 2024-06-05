@@ -3,11 +3,11 @@ import { FaArrowRightLong, FaRegCirclePlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="mt-20 flex justify-between">
+    <div className="mt-20 flex justify-between h-[100vh] ">
       {/* make the best */}
-      <div>
+      <div className="">
         <div>
-          <h1 className="font-extrabold text-6xl">
+          <h1 className="font-extrabold text-6xl ">
             Make The Best <br />
             Financial Decisions
           </h1>
@@ -31,13 +31,30 @@ const Hero = () => {
           <Image src="/hero/shape.png" width={500} height={400} alt="logo" />
         </div>
       </div>
-        {/* iphone section */}
-      <div className="">
-        <div className="">
-          <img className="" src="/hero/iPhone3.png" width={400} height={100} alt="" />
-          {/* <img src="/hero/iPhone1.png" width={100} height={100} alt="" />
-          <img src="/hero/iPhone2.png" width={100} height={100} alt="" /> */}
-        </div>
+      {/* iphone section */}
+
+      <div className="w-[40%] relative ">
+        <Image
+          className="absolute top-32 -right-10"
+          src="/hero/iPhone2.png"
+          width={400}
+          height={100}
+          alt="phone2"
+        />
+        <Image
+          className="absolute top-16 right-10"
+          src="/hero/iPhone1.png"
+          width={400}
+          height={100}
+          alt="phone1"
+        />
+        <Image
+          className="absolute top-0 left-0"
+          src="/hero/iPhone2.png"
+          width={400}
+          height={100}
+          alt="phone"
+        />
       </div>
     </div>
   );
